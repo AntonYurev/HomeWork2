@@ -1,2 +1,8 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿//принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
+Console.Write("Введите число дня недели от 1 до 7: ");
+int num = Convert.ToInt32(Console.ReadLine());
+if (num == 6) Console.Write("Это выходной день недели");
+if (num == 7) Console.Write("Это выходной день недели");
+if (num >= 1 && num <=5) Console.Write("Это Будний день недели");
+if (num < 1) Console.Write("Это не день недели! Нужно вводить число от 1 до 7");
+if (num > 7) Console.Write("Это не день недели! Нужно вводить число от 1 до 7");
